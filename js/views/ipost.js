@@ -26,6 +26,7 @@ define(['jquery', 'underscore', 'backbone', 'cgi', 'config'], function($, _, Bac
 		},
 
 		submit : function(e) {
+			console.log(123);
 			var self = this, url = 'http://postserv.post.gov.tw/webpost/CSController?cmd=POS4001_3&_SYS_ID=D&_MENU_ID=189&_ACTIVE_ID=190&MAILNO=' + _.escapeHTML(this.$(":text").val());
 			e.preventDefault();
 			this.$el.removeClass("result");
